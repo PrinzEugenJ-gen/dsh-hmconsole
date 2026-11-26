@@ -1,0 +1,65 @@
+{
+  "name": "dsh-hmconsole",
+  "version": "0.1.0",
+  "description": "DSH·HM 控制台（自由版）：手机扫码 / 输 6 位码就连上这台电脑的 DSH；公网走「自建 frps」或「内置免费隧道」，不需要会员、不需要充值。",
+  "license": "MIT",
+  "author": "CJ <ChenJun25@users.noreply.github.com>",
+  "contributors": [
+    "dsh-hmconsole fork（自由版改造）"
+  ],
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.1",
+    "@deepseek-ai/dsh-client-locale": ">=0.1.0-rc.5",
+    "@deepseek-ai/dsh-client-ui-settings": ">=0.1.0-rc.5",
+    "react": "^18.2.0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-client-locale": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-client-ui-settings": {
+      "optional": true
+    },
+    "react": {
+      "optional": true
+    }
+  },
+  "files": [
+    "lib/*.js",
+    "lib/*.mjs",
+    "cordis.patch.yml",
+    "README.md",
+    "detail.zh.md",
+    "detail.en.md",
+    "locale/*.json"
+  ],
+  "scripts": {
+    "test": "node test/selftest.mjs"
+  }
+}
