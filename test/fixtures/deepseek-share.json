@@ -1,0 +1,44 @@
+{
+  "_fixture_note": "真实响应结构（2026-11-25 抓自 https://chat.deepseek.com/api/v0/share/content?share_id=engtbxuvz0v6g8mldl），正文已截断以控制体积；字段名与层级未改动。",
+  "code": 0,
+  "msg": "",
+  "data": {
+    "biz_code": 0,
+    "biz_msg": "",
+    "biz_data": {
+      "title": "Shared Conversation",
+      "model_type": "default",
+      "messages": [
+        {
+          "message_id": 1,
+          "parent_id": null,
+          "model": "",
+          "role": "USER",
+          "inserted_at": 1795144996.187,
+          "fragments": [
+            { "id": 1, "type": "REQUEST", "content": "幺正变换" }
+          ]
+        },
+        {
+          "message_id": 2,
+          "parent_id": 1,
+          "model": "",
+          "role": "ASSISTANT",
+          "inserted_at": 1795144996.182,
+          "fragments": [
+            {
+              "id": 2,
+              "type": "THINK",
+              "content": "我们需要回答用户“幺正变换”。要涵盖定义、性质、矩阵表示。定义：内积空间中线性变换U满足 U†U=UU†=I。"
+            },
+            {
+              "id": 3,
+              "type": "RESPONSE",
+              "content": "**幺正变换**（又称**酉变换**）是保持内积不变的线性变换。设 \\(U\\) 满足  \n\\[\nU^\\dagger U=UU^\\dagger=I,\n\\]\n则称 \\(U\\) 为幺正算符。"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
