@@ -119,5 +119,5 @@ auth.token = "<你自己生成的随机串>"
 
 ## 许可
 
-MIT。上游版权归 CJ（[ChenJun25/dsh-console-hm](https://github.com/ChenJun25/dsh-console-hm)）；
-本分支去掉了会员体系与作者云依赖，其余功能与上游对齐。
+MIT。上游版权归 PrinzEugenJ-gen（[PrinzEugenJ-gen/dsh-hmconsole](https://github.com/PrinzEugenJ-gen/dsh-hmconsole)）；
+当前版本为内测使用，鸿蒙端APP开发中，预计2027年1月推出鸿蒙APP内测版本。
